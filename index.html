@@ -1,1 +1,74 @@
-<!-- placeholder, re-download previous full version if needed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workout Tracker</title>
+
+<style>
+:root{
+  --text:#1f2937;
+  --muted:#6b7280;
+  --line:rgba(17,24,39,.14);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui;
+  background: transparent;
+  color:var(--text);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.container{
+  width:min(400px, 100%);
+  text-align:center;
+}
+
+h1{
+  font-size:20px;
+  margin-bottom:20px;
+}
+
+.grid{
+  display:grid;
+  gap:12px;
+}
+
+.card{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:16px;
+  text-decoration:none;
+  color:var(--text);
+  background:rgba(255,255,255,.6);
+  backdrop-filter:blur(10px);
+  transition:.15s;
+}
+
+.card:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.9);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Workout Tracker</h1>
+
+  <div class="grid">
+    <a href="daily.html" class="card">Daily</a>
+    <a href="weekly.html" class="card">Weekly</a>
+    <a href="monthly.html" class="card">Monthly</a>
+    <a href="yearly.html" class="card">Yearly</a>
+  </div>
+</div>
+
+</body>
+</html>
